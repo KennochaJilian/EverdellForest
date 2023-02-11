@@ -60,6 +60,8 @@ public class MapController extends EverdellController {
     }
 
     private void manageTimeSpeedField(){
+        int gameSpeed = this.game.getGameSpeed();
+        timeSpeedField.setText(String.valueOf(gameSpeed));
         timeSpeedField.textProperty().addListener((observable, oldValue, newValue) -> {
             if (!newValue.matches("\\d*")) {
                 timeSpeedField.setText(newValue.replaceAll("[^\\d]", ""));
