@@ -12,6 +12,6 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Button text="Souris" onAction="#onSelectMouse"/>
-    <Button text="Ecureuil" onAction="#onSelectSquirell"/>
+    <Button fx:id="mouse" text="Souris"/>
+    <Button fx:id="squirell" text="Ecureuil"/>
 </VBox>

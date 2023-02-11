@@ -1,5 +1,7 @@
 package ovh.aquarius.everdellforest.models;
 
+import com.google.gson.Gson;
+
 public class Game {
     private static Game instance = null;
 
@@ -29,6 +31,11 @@ public class Game {
             instance = new Game(player);
         }
         return instance;
+    }
+
+    public String exportToJson(){
+        Gson gson = new Gson();
+        return gson.toJson(this);
     }
 
 
