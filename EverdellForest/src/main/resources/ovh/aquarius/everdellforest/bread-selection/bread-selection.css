@@ -1,5 +1,5 @@
 #pane{
-    -fx-background-image: url("assets/home.jpg");
+    -fx-background-image: url("../assets/breed-selection.png");
     -fx-background-repeat: stretch;
     -fx-background-size: cover;
     -fx-background-position: center center;
