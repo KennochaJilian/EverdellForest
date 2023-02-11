@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox id="pane" alignment="BOTTOM_CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="ovh.aquarius.everdellforest.views.map.MapController"
+      minHeight="400" minWidth="810"
+>
+    <HBox xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml">
+
+        <Button fx:id="save" text="Sauvegarder" VBox.vgrow="ALWAYS"/>
+        <Button fx:id="load" text="Charger" VBox.vgrow="ALWAYS"/>
+        <Button fx:id="newGame" text="Nouvelle partie" VBox.vgrow="ALWAYS"/>
+
+
+        <Label text="Temps" VBox.vgrow="ALWAYS"/>
+        <TextField fx:id="timeSpeedField" />
+        <Button fx:id="quit" text="Quitter" VBox.vgrow="ALWAYS"/>
+
+    </HBox>
+</VBox>

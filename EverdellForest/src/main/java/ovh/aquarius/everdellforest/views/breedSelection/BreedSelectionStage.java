@@ -1,4 +1,4 @@
-package ovh.aquarius.everdellforest.views.breedselection;
+package ovh.aquarius.everdellforest.views.breedSelection;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -7,7 +7,7 @@ import ovh.aquarius.everdellforest.Main;
 
 import java.io.IOException;
 
-public class BreadSelectionStage extends Stage {
+public class BreedSelectionStage extends Stage {
 
     public void load() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("bread-selection/bread-selection.fxml"));
