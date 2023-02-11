@@ -5,7 +5,7 @@
 
 <?import javafx.scene.control.Button?>
 <VBox id="pane" alignment="BOTTOM_CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="ovh.aquarius.everdellforest.views.breedselection.BreadSelectionController"
+      fx:controller="ovh.aquarius.everdellforest.views.breedselection.BreedSelectionController"
         minHeight="400" minWidth="810"
 >
     <padding>

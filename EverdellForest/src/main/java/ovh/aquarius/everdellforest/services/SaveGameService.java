@@ -18,7 +18,8 @@ public class SaveGameService {
         return instance;
     }
     public void saveGame(Game game){
-        fileService.saveToFile(game.exportToJson(), SAVE_DIRECTORY_PATH, "game.json");
+        String gameFileName = game.getId().toString() + "_game.json";
+        fileService.saveToFile(game.exportToJson(), SAVE_DIRECTORY_PATH, gameFileName);
     }
 
 

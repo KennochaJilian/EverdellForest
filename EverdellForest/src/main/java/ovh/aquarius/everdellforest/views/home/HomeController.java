@@ -3,7 +3,7 @@ package ovh.aquarius.everdellforest.views.home;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-import ovh.aquarius.everdellforest.views.breedselection.BreadSelectionStage;
+import ovh.aquarius.everdellforest.views.breedselection.BreedSelectionStage;
 
 import java.io.IOException;
 
@@ -13,7 +13,7 @@ public class HomeController {
 
     @FXML
     protected void onPlayButton() throws IOException {
-        BreadSelectionStage selectionStage = new BreadSelectionStage();
+        BreedSelectionStage selectionStage = new BreedSelectionStage();
         selectionStage.load();
         closeStage();
     }
