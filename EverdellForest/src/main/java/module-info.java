@@ -5,4 +5,6 @@ module ovh.aquarius.everdellforest {
 
     opens ovh.aquarius.everdellforest to javafx.fxml;
     exports ovh.aquarius.everdellforest;
+    exports ovh.aquarius.everdellforest.views.home;
+    opens ovh.aquarius.everdellforest.views.home to javafx.fxml;
 }
