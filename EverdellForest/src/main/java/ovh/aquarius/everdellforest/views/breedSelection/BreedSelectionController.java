@@ -1,4 +1,4 @@
-package ovh.aquarius.everdellforest.views.breedselection;
+package ovh.aquarius.everdellforest.views.breedSelection;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

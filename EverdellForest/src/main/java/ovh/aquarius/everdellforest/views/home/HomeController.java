@@ -3,7 +3,7 @@ package ovh.aquarius.everdellforest.views.home;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
-import ovh.aquarius.everdellforest.views.breedselection.BreedSelectionStage;
+import ovh.aquarius.everdellforest.views.breedSelection.BreedSelectionStage;
 
 import java.io.IOException;
 

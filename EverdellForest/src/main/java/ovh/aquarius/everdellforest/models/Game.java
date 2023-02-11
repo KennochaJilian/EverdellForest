@@ -37,6 +37,11 @@ public class Game {
         }
         return instance;
     }
+    public static void setInstance(Game game){
+        System.out.println("load game" + game.getId());
+        instance = game;
+    }
+
     public static void resetGame(){
         instance = null;
     }

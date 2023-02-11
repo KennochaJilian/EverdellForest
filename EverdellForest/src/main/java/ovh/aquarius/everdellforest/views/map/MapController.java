@@ -5,7 +5,8 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import ovh.aquarius.everdellforest.models.Game;
 import ovh.aquarius.everdellforest.views.EverdellController;
-import ovh.aquarius.everdellforest.views.breedselection.BreedSelectionStage;
+import ovh.aquarius.everdellforest.views.breedSelection.BreedSelectionStage;
+import ovh.aquarius.everdellforest.views.loadGamesModal.LoadGamesModalStage;
 
 import java.io.IOException;
 
@@ -17,7 +18,7 @@ public class MapController extends EverdellController {
     public Button quit;
     public TextField timeSpeedField;
 
-    private Game game;
+    private final Game game;
 
     public MapController(){
         super();
@@ -36,6 +37,9 @@ public class MapController extends EverdellController {
                 throw new RuntimeException(ex);
             }
         });
+        load.setOnAction(e -> {
+            openGamesPopup();
+        });
         quit.setOnAction(e -> {
             saveService.saveGame(Game.getInstance());
             closeStage();
@@ -48,6 +52,11 @@ public class MapController extends EverdellController {
         BreedSelectionStage stage = new BreedSelectionStage();
         stage.load();
         closeStage();
+    }
+
+    private void openGamesPopup(){
+        LoadGamesModalStage stage = new LoadGamesModalStage();
+        stage.load();
     }
 
     private void manageTimeSpeedField(){

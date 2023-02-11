@@ -20,7 +20,6 @@ public class GameService {
         System.out.println("Game initialisée");
         System.out.println(newGame);
     }
-
     private Breed getBreedSelected(String breedSelected){
         Breed breed = null;
         switch (breedSelected) {

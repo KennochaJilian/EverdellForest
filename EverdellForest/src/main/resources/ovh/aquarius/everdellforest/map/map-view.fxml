@@ -2,8 +2,7 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import ovh.aquarius.everdellforest.views.custominputs.IntField?>
-<?import com.sun.javafx.scene.control.IntegerField?>
+
 <VBox id="pane" alignment="BOTTOM_CENTER" xmlns:fx="http://javafx.com/fxml"
       fx:controller="ovh.aquarius.everdellforest.views.map.MapController"
       minHeight="400" minWidth="810"
