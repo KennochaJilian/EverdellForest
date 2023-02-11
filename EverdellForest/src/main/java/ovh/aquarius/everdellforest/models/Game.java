@@ -49,5 +49,11 @@ public class Game {
     public UUID getId() {
         return id;
     }
+    public int getGameSpeed(){
+        return gameSpeed;
+    }
+    public void setGameSpeed(int gameSpeed){
+        this.gameSpeed = gameSpeed;
+    }
 
 }
